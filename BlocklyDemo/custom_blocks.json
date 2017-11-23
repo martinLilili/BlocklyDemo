@@ -1,0 +1,75 @@
+[
+ {
+ "type": "title_input_block",
+ "message0": "标题: %1",
+ "args0": [
+           {
+           "type": "field_input",
+           "name": "Input",
+           "text": ""
+           }
+           ],
+ "message1": "添加 %1",
+ "args1": [
+           {
+           "type": "input_statement",
+           "name": "DO"
+           }
+           ],
+ "previousStatement": null,
+ "nextStatement": null,
+ "colour": 20
+ },
+  {
+    "type": "expression",
+    "message0": "表情 %1",
+    "args0": [{
+      "type": "field_dropdown",
+      "name": "VALUE",
+      "options": [
+        ["开心", "happy"],
+        ["难过", "sad"]
+      ]
+    }],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 60
+  },
+     {
+     "type": "action",
+     "message0": "动作 %1",
+     "args0": [{
+               "type": "field_dropdown",
+               "name": "VALUE",
+               "options": [
+                           ["抬头", "head"],
+                           ["握手", "hand"]
+                           ]
+               }],
+     "previousStatement": null,
+     "nextStatement": null,
+     "colour": 100
+     },
+ {
+ "type": "text_input_block",
+ "message0": "文本内容: %1",
+ "args0": [
+           {
+           "type": "field_input",
+           "name": "Input",
+           "text": ""
+           }
+ ],
+ "message1": "延时 %1",
+ "args1": [
+           {
+           "type": "field_number",
+           "name": "number",
+           "min": 0
+           }
+           ],
+ "previousStatement": null,
+ "nextStatement": null,
+ "colour": 140
+ }
+]

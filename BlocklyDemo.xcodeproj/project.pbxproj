@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8800DB9D3AB4D0A4A07CA40A /* Pods_BlocklyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47908971A25068816AEDBC34 /* Pods_BlocklyDemo.framework */; };
+		ED4DA3201FC66569006983E0 /* custom_blocks.json in Resources */ = {isa = PBXBuildFile; fileRef = ED4DA31F1FC66569006983E0 /* custom_blocks.json */; };
+		ED4DA3221FC676FA006983E0 /* custom_generators.js in Resources */ = {isa = PBXBuildFile; fileRef = ED4DA3211FC676FA006983E0 /* custom_generators.js */; };
+		ED4DA3241FC677BB006983E0 /* CodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA3231FC677BB006983E0 /* CodeManager.swift */; };
+		ED4DA32F1FC67ABA006983E0 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA32E1FC67ABA006983E0 /* FileHelper.swift */; };
+		ED4DA33B1FC67DCA006983E0 /* blockly_web in Resources */ = {isa = PBXBuildFile; fileRef = ED4DA33A1FC67DCA006983E0 /* blockly_web */; };
+		ED4DA33D1FC6A79F006983E0 /* ActionMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA33C1FC6A79F006983E0 /* ActionMaker.swift */; };
+		ED4DA33F1FC6A8C7006983E0 /* CodeRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA33E1FC6A8C7006983E0 /* CodeRunner.swift */; };
+		ED6399BD1FC57AD000E9CF8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6399BC1FC57AD000E9CF8C /* AppDelegate.swift */; };
+		ED6399BF1FC57AD000E9CF8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6399BE1FC57AD000E9CF8C /* ViewController.swift */; };
+		ED6399C21FC57AD000E9CF8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6399C01FC57AD000E9CF8C /* Main.storyboard */; };
+		ED6399C41FC57AD000E9CF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6399C31FC57AD000E9CF8C /* Assets.xcassets */; };
+		ED6399C71FC57AD000E9CF8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6399C51FC57AD000E9CF8C /* LaunchScreen.storyboard */; };
+		ED6399D21FC57AD100E9CF8C /* BlocklyDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6399D11FC57AD100E9CF8C /* BlocklyDemoTests.swift */; };
+		ED6399DD1FC57AD100E9CF8C /* BlocklyDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6399DC1FC57AD100E9CF8C /* BlocklyDemoUITests.swift */; };
+		ED6399EB1FC57EE800E9CF8C /* toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED6399EA1FC57EE800E9CF8C /* toolbox.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED6399CE1FC57AD100E9CF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED6399B11FC57AD000E9CF8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6399B81FC57AD000E9CF8C;
+			remoteInfo = BlocklyDemo;
+		};
+		ED6399D91FC57AD100E9CF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED6399B11FC57AD000E9CF8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6399B81FC57AD000E9CF8C;
+			remoteInfo = BlocklyDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2233C68E70CBCC2930132B7D /* Pods-BlocklyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyDemo/Pods-BlocklyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		47908971A25068816AEDBC34 /* Pods_BlocklyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlocklyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4DA31F1FC66569006983E0 /* custom_blocks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = custom_blocks.json; sourceTree = "<group>"; };
+		ED4DA3211FC676FA006983E0 /* custom_generators.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = custom_generators.js; sourceTree = "<group>"; };
+		ED4DA3231FC677BB006983E0 /* CodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeManager.swift; sourceTree = "<group>"; };
+		ED4DA32E1FC67ABA006983E0 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		ED4DA33A1FC67DCA006983E0 /* blockly_web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = blockly_web; sourceTree = "<group>"; };
+		ED4DA33C1FC6A79F006983E0 /* ActionMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionMaker.swift; sourceTree = "<group>"; };
+		ED4DA33E1FC6A8C7006983E0 /* CodeRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRunner.swift; sourceTree = "<group>"; };
+		ED6399B91FC57AD000E9CF8C /* BlocklyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlocklyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6399BC1FC57AD000E9CF8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED6399BE1FC57AD000E9CF8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED6399C11FC57AD000E9CF8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED6399C31FC57AD000E9CF8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED6399C61FC57AD000E9CF8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED6399C81FC57AD000E9CF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6399CD1FC57AD100E9CF8C /* BlocklyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocklyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6399D11FC57AD100E9CF8C /* BlocklyDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklyDemoTests.swift; sourceTree = "<group>"; };
+		ED6399D31FC57AD100E9CF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6399D81FC57AD100E9CF8C /* BlocklyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocklyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6399DC1FC57AD100E9CF8C /* BlocklyDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklyDemoUITests.swift; sourceTree = "<group>"; };
+		ED6399DE1FC57AD100E9CF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6399EA1FC57EE800E9CF8C /* toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = toolbox.xml; sourceTree = "<group>"; };
+		F260F34E7C8F3EF034BACC61 /* Pods-BlocklyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyDemo/Pods-BlocklyDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED6399B61FC57AD000E9CF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8800DB9D3AB4D0A4A07CA40A /* Pods_BlocklyDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6399CA1FC57AD100E9CF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6399D51FC57AD100E9CF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1023BEEBABC96514DC5A1606 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47908971A25068816AEDBC34 /* Pods_BlocklyDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1A57C8BC6DA46E0B79225FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2233C68E70CBCC2930132B7D /* Pods-BlocklyDemo.debug.xcconfig */,
+				F260F34E7C8F3EF034BACC61 /* Pods-BlocklyDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED6399B01FC57AD000E9CF8C = {
+			isa = PBXGroup;
+			children = (
+				ED6399BB1FC57AD000E9CF8C /* BlocklyDemo */,
+				ED6399D01FC57AD100E9CF8C /* BlocklyDemoTests */,
+				ED6399DB1FC57AD100E9CF8C /* BlocklyDemoUITests */,
+				ED6399BA1FC57AD000E9CF8C /* Products */,
+				D1A57C8BC6DA46E0B79225FD /* Pods */,
+				1023BEEBABC96514DC5A1606 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED6399BA1FC57AD000E9CF8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED6399B91FC57AD000E9CF8C /* BlocklyDemo.app */,
+				ED6399CD1FC57AD100E9CF8C /* BlocklyDemoTests.xctest */,
+				ED6399D81FC57AD100E9CF8C /* BlocklyDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED6399BB1FC57AD000E9CF8C /* BlocklyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ED4DA33A1FC67DCA006983E0 /* blockly_web */,
+				ED4DA3211FC676FA006983E0 /* custom_generators.js */,
+				ED4DA31F1FC66569006983E0 /* custom_blocks.json */,
+				ED6399EA1FC57EE800E9CF8C /* toolbox.xml */,
+				ED6399BC1FC57AD000E9CF8C /* AppDelegate.swift */,
+				ED6399BE1FC57AD000E9CF8C /* ViewController.swift */,
+				ED6399C01FC57AD000E9CF8C /* Main.storyboard */,
+				ED6399C31FC57AD000E9CF8C /* Assets.xcassets */,
+				ED6399C51FC57AD000E9CF8C /* LaunchScreen.storyboard */,
+				ED6399C81FC57AD000E9CF8C /* Info.plist */,
+				ED4DA3231FC677BB006983E0 /* CodeManager.swift */,
+				ED4DA32E1FC67ABA006983E0 /* FileHelper.swift */,
+				ED4DA33C1FC6A79F006983E0 /* ActionMaker.swift */,
+				ED4DA33E1FC6A8C7006983E0 /* CodeRunner.swift */,
+			);
+			path = BlocklyDemo;
+			sourceTree = "<group>";
+		};
+		ED6399D01FC57AD100E9CF8C /* BlocklyDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED6399D11FC57AD100E9CF8C /* BlocklyDemoTests.swift */,
+				ED6399D31FC57AD100E9CF8C /* Info.plist */,
+			);
+			path = BlocklyDemoTests;
+			sourceTree = "<group>";
+		};
+		ED6399DB1FC57AD100E9CF8C /* BlocklyDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED6399DC1FC57AD100E9CF8C /* BlocklyDemoUITests.swift */,
+				ED6399DE1FC57AD100E9CF8C /* Info.plist */,
+			);
+			path = BlocklyDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED6399B81FC57AD000E9CF8C /* BlocklyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6399E11FC57AD100E9CF8C /* Build configuration list for PBXNativeTarget "BlocklyDemo" */;
+			buildPhases = (
+				96CEE1801D50ACE5AFC86F0F /* [CP] Check Pods Manifest.lock */,
+				ED6399B51FC57AD000E9CF8C /* Sources */,
+				ED6399B61FC57AD000E9CF8C /* Frameworks */,
+				ED6399B71FC57AD000E9CF8C /* Resources */,
+				39F3EDFFBFBE177D49A1ED22 /* [CP] Embed Pods Frameworks */,
+				B8E45EABF1A75811D7116421 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlocklyDemo;
+			productName = BlocklyDemo;
+			productReference = ED6399B91FC57AD000E9CF8C /* BlocklyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED6399CC1FC57AD100E9CF8C /* BlocklyDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6399E41FC57AD100E9CF8C /* Build configuration list for PBXNativeTarget "BlocklyDemoTests" */;
+			buildPhases = (
+				ED6399C91FC57AD100E9CF8C /* Sources */,
+				ED6399CA1FC57AD100E9CF8C /* Frameworks */,
+				ED6399CB1FC57AD100E9CF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED6399CF1FC57AD100E9CF8C /* PBXTargetDependency */,
+			);
+			name = BlocklyDemoTests;
+			productName = BlocklyDemoTests;
+			productReference = ED6399CD1FC57AD100E9CF8C /* BlocklyDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED6399D71FC57AD100E9CF8C /* BlocklyDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6399E71FC57AD100E9CF8C /* Build configuration list for PBXNativeTarget "BlocklyDemoUITests" */;
+			buildPhases = (
+				ED6399D41FC57AD100E9CF8C /* Sources */,
+				ED6399D51FC57AD100E9CF8C /* Frameworks */,
+				ED6399D61FC57AD100E9CF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED6399DA1FC57AD100E9CF8C /* PBXTargetDependency */,
+			);
+			name = BlocklyDemoUITests;
+			productName = BlocklyDemoUITests;
+			productReference = ED6399D81FC57AD100E9CF8C /* BlocklyDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED6399B11FC57AD000E9CF8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = martin;
+				TargetAttributes = {
+					ED6399B81FC57AD000E9CF8C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					ED6399CC1FC57AD100E9CF8C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED6399B81FC57AD000E9CF8C;
+					};
+					ED6399D71FC57AD100E9CF8C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED6399B81FC57AD000E9CF8C;
+					};
+				};
+			};
+			buildConfigurationList = ED6399B41FC57AD000E9CF8C /* Build configuration list for PBXProject "BlocklyDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED6399B01FC57AD000E9CF8C;
+			productRefGroup = ED6399BA1FC57AD000E9CF8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED6399B81FC57AD000E9CF8C /* BlocklyDemo */,
+				ED6399CC1FC57AD100E9CF8C /* BlocklyDemoTests */,
+				ED6399D71FC57AD100E9CF8C /* BlocklyDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED6399B71FC57AD000E9CF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6399C71FC57AD000E9CF8C /* LaunchScreen.storyboard in Resources */,
+				ED4DA3201FC66569006983E0 /* custom_blocks.json in Resources */,
+				ED6399EB1FC57EE800E9CF8C /* toolbox.xml in Resources */,
+				ED6399C41FC57AD000E9CF8C /* Assets.xcassets in Resources */,
+				ED4DA3221FC676FA006983E0 /* custom_generators.js in Resources */,
+				ED4DA33B1FC67DCA006983E0 /* blockly_web in Resources */,
+				ED6399C21FC57AD000E9CF8C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6399CB1FC57AD100E9CF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6399D61FC57AD100E9CF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39F3EDFFBFBE177D49A1ED22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BlocklyDemo/Pods-BlocklyDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
+				"${BUILT_PRODUCTS_DIR}/Blockly/Blockly.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Blockly.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlocklyDemo/Pods-BlocklyDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96CEE1801D50ACE5AFC86F0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlocklyDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8E45EABF1A75811D7116421 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlocklyDemo/Pods-BlocklyDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED6399B51FC57AD000E9CF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6399BF1FC57AD000E9CF8C /* ViewController.swift in Sources */,
+				ED4DA3241FC677BB006983E0 /* CodeManager.swift in Sources */,
+				ED4DA33F1FC6A8C7006983E0 /* CodeRunner.swift in Sources */,
+				ED4DA33D1FC6A79F006983E0 /* ActionMaker.swift in Sources */,
+				ED6399BD1FC57AD000E9CF8C /* AppDelegate.swift in Sources */,
+				ED4DA32F1FC67ABA006983E0 /* FileHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6399C91FC57AD100E9CF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6399D21FC57AD100E9CF8C /* BlocklyDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6399D41FC57AD100E9CF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6399DD1FC57AD100E9CF8C /* BlocklyDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED6399CF1FC57AD100E9CF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED6399B81FC57AD000E9CF8C /* BlocklyDemo */;
+			targetProxy = ED6399CE1FC57AD100E9CF8C /* PBXContainerItemProxy */;
+		};
+		ED6399DA1FC57AD100E9CF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED6399B81FC57AD000E9CF8C /* BlocklyDemo */;
+			targetProxy = ED6399D91FC57AD100E9CF8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED6399C01FC57AD000E9CF8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6399C11FC57AD000E9CF8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED6399C51FC57AD000E9CF8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6399C61FC57AD000E9CF8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED6399DF1FC57AD100E9CF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED6399E01FC57AD100E9CF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED6399E21FC57AD100E9CF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2233C68E70CBCC2930132B7D /* Pods-BlocklyDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37DXBWQK86;
+				INFOPLIST_FILE = BlocklyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyue.BlocklyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED6399E31FC57AD100E9CF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F260F34E7C8F3EF034BACC61 /* Pods-BlocklyDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37DXBWQK86;
+				INFOPLIST_FILE = BlocklyDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyue.BlocklyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED6399E51FC57AD100E9CF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37DXBWQK86;
+				INFOPLIST_FILE = BlocklyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyue.BlocklyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlocklyDemo.app/BlocklyDemo";
+			};
+			name = Debug;
+		};
+		ED6399E61FC57AD100E9CF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37DXBWQK86;
+				INFOPLIST_FILE = BlocklyDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyue.BlocklyDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlocklyDemo.app/BlocklyDemo";
+			};
+			name = Release;
+		};
+		ED6399E81FC57AD100E9CF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37DXBWQK86;
+				INFOPLIST_FILE = BlocklyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyue.BlocklyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlocklyDemo;
+			};
+			name = Debug;
+		};
+		ED6399E91FC57AD100E9CF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37DXBWQK86;
+				INFOPLIST_FILE = BlocklyDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyue.BlocklyDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlocklyDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED6399B41FC57AD000E9CF8C /* Build configuration list for PBXProject "BlocklyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6399DF1FC57AD100E9CF8C /* Debug */,
+				ED6399E01FC57AD100E9CF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6399E11FC57AD100E9CF8C /* Build configuration list for PBXNativeTarget "BlocklyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6399E21FC57AD100E9CF8C /* Debug */,
+				ED6399E31FC57AD100E9CF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6399E41FC57AD100E9CF8C /* Build configuration list for PBXNativeTarget "BlocklyDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6399E51FC57AD100E9CF8C /* Debug */,
+				ED6399E61FC57AD100E9CF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6399E71FC57AD100E9CF8C /* Build configuration list for PBXNativeTarget "BlocklyDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6399E81FC57AD100E9CF8C /* Debug */,
+				ED6399E91FC57AD100E9CF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED6399B11FC57AD000E9CF8C /* Project object */;
+}
