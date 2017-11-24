@@ -21,7 +21,7 @@ import Foundation
  future use.
  */
 class CodeManager {
-    /// Stores JS code for a unique key (ie. a button ID).
+    /// Stores JS code
     private var savedCode = String()
     
     /// Service used for converting workspace XML into JS code.

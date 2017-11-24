@@ -12,7 +12,6 @@
 		ED4DA3221FC676FA006983E0 /* custom_generators.js in Resources */ = {isa = PBXBuildFile; fileRef = ED4DA3211FC676FA006983E0 /* custom_generators.js */; };
 		ED4DA3241FC677BB006983E0 /* CodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA3231FC677BB006983E0 /* CodeManager.swift */; };
 		ED4DA32F1FC67ABA006983E0 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA32E1FC67ABA006983E0 /* FileHelper.swift */; };
-		ED4DA33B1FC67DCA006983E0 /* blockly_web in Resources */ = {isa = PBXBuildFile; fileRef = ED4DA33A1FC67DCA006983E0 /* blockly_web */; };
 		ED4DA33D1FC6A79F006983E0 /* ActionMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA33C1FC6A79F006983E0 /* ActionMaker.swift */; };
 		ED4DA33F1FC6A8C7006983E0 /* CodeRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA33E1FC6A8C7006983E0 /* CodeRunner.swift */; };
 		ED6399BD1FC57AD000E9CF8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6399BC1FC57AD000E9CF8C /* AppDelegate.swift */; };
@@ -23,6 +22,7 @@
 		ED6399D21FC57AD100E9CF8C /* BlocklyDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6399D11FC57AD100E9CF8C /* BlocklyDemoTests.swift */; };
 		ED6399DD1FC57AD100E9CF8C /* BlocklyDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6399DC1FC57AD100E9CF8C /* BlocklyDemoUITests.swift */; };
 		ED6399EB1FC57EE800E9CF8C /* toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED6399EA1FC57EE800E9CF8C /* toolbox.xml */; };
+		ED93BB811FC806880050AB7B /* blockly_web in Resources */ = {isa = PBXBuildFile; fileRef = ED93BB801FC806880050AB7B /* blockly_web */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 		ED4DA3211FC676FA006983E0 /* custom_generators.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = custom_generators.js; sourceTree = "<group>"; };
 		ED4DA3231FC677BB006983E0 /* CodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeManager.swift; sourceTree = "<group>"; };
 		ED4DA32E1FC67ABA006983E0 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
-		ED4DA33A1FC67DCA006983E0 /* blockly_web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = blockly_web; sourceTree = "<group>"; };
 		ED4DA33C1FC6A79F006983E0 /* ActionMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionMaker.swift; sourceTree = "<group>"; };
 		ED4DA33E1FC6A8C7006983E0 /* CodeRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRunner.swift; sourceTree = "<group>"; };
 		ED6399B91FC57AD000E9CF8C /* BlocklyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlocklyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +65,7 @@
 		ED6399DC1FC57AD100E9CF8C /* BlocklyDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklyDemoUITests.swift; sourceTree = "<group>"; };
 		ED6399DE1FC57AD100E9CF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED6399EA1FC57EE800E9CF8C /* toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = toolbox.xml; sourceTree = "<group>"; };
+		ED93BB801FC806880050AB7B /* blockly_web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = blockly_web; sourceTree = "<group>"; };
 		F260F34E7C8F3EF034BACC61 /* Pods-BlocklyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyDemo/Pods-BlocklyDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,7 +137,7 @@
 		ED6399BB1FC57AD000E9CF8C /* BlocklyDemo */ = {
 			isa = PBXGroup;
 			children = (
-				ED4DA33A1FC67DCA006983E0 /* blockly_web */,
+				ED93BB801FC806880050AB7B /* blockly_web */,
 				ED4DA3211FC676FA006983E0 /* custom_generators.js */,
 				ED4DA31F1FC66569006983E0 /* custom_blocks.json */,
 				ED6399EA1FC57EE800E9CF8C /* toolbox.xml */,
@@ -288,7 +288,7 @@
 				ED6399EB1FC57EE800E9CF8C /* toolbox.xml in Resources */,
 				ED6399C41FC57AD000E9CF8C /* Assets.xcassets in Resources */,
 				ED4DA3221FC676FA006983E0 /* custom_generators.js in Resources */,
-				ED4DA33B1FC67DCA006983E0 /* blockly_web in Resources */,
+				ED93BB811FC806880050AB7B /* blockly_web in Resources */,
 				ED6399C21FC57AD000E9CF8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

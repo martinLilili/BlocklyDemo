@@ -82,7 +82,7 @@ class ViewController: UIViewController {
         // If a saved workspace file exists for this button, generate the code for it.
         if let workspaceXML = FileHelper.loadContents(of: "workspace.xml") {
             codeManager.generateCode(workspaceXML: workspaceXML, savedCode: { code in
-                print("Code for button :\n \(code)")
+                print("Generate Code  :\n \(code)")
                 
                 let codeRunner = CodeRunner()
                 codeRunner.runJavascriptCode(code, completion: {
