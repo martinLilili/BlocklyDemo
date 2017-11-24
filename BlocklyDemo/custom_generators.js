@@ -1,6 +1,6 @@
 'use strict';
 
-// Generators for blocks defined in `sound_blocks.json`.
+// Generators for blocks defined in `custom_blocks.json`.
 Blockly.JavaScript['expression'] = function(block) {
   var value = '\'' + block.getFieldValue('VALUE') + '\'';
   return 'ActionMaker.setExpression(' + value + ');\n';
@@ -22,3 +22,4 @@ Blockly.JavaScript['title_input_block'] = function(block) {
     var func = Blockly.JavaScript.statementToCode(block,"DO");
     return func + 'ActionMaker.setTitle(' + title + ');\n';
 };
+
